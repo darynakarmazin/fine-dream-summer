@@ -171,3 +171,18 @@ body {
     text-align: center;
   }
 }
+
+/* ========== Catalog ========== */
+.catalog-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-title);
+  color: var(--dark-text);
+}
+
+.catalog-img {
+  padding-top: 45px;
+  margin-bottom: 45px;
+  /* width: 280px;
+  height: 226px; */
+}
