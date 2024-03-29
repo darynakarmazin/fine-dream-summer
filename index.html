@@ -17,32 +17,48 @@
       <section class="hero-section">
         <div class="container">
           <div class="hero-content">
-            <img
-              class="hero-logo"
-              srcset="
-                ./css/images/mob-logo.png    1x,
-                ./css/images/mob-logo@x2.png 2x
-              "
-              src="./css/images/mob-logo.png"
-              alt="the Smart company logo"
-              width="185"
-              height="184"
-            />
+            <picture>
+              <source
+                media="(min-width: 1536px)"
+                srcset="./css/images/deck-logo.png"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./css/images/tab-logo.png"
+              />
+              <source
+                media="(max-width: 1023px)"
+                srcset="./css/images/mob-logo.png"
+              />
+              <img
+                class="hero-logo"
+                src="./css/images/mob-logo.png"
+                alt="the Smart company logo"
+              />
+            </picture>
             <h1 class="hero-title">
               <span>Ковдра</span><br />
               Fine Dream Summer
             </h1>
-            <img
-              class="hero-img"
-              srcset="
-                ./css/images/blanket.png    1x,
-                ./css/images/blanket@x2.png 2x
-              "
-              src="./css/images/blanket.png"
-              alt="the blanket photo"
-              width="283"
-              height="167"
-            />
+            <picture>
+              <source
+                media="(min-width: 1536px)"
+                srcset="./css/images/deck-blanket.png"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./css/images/tab-blanket.png"
+              />
+              <source
+                media="(max-width: 1023px)"
+                srcset="./css/images/mob-blanket.png"
+              />
+              <img
+                class="hero-img"
+                src="./css/images/mob-blanket.png"
+                alt="the blanket photo"
+              />
+            </picture>
             <ul class="hero-advantages">
               <li class="hero-items">
                 <p class="hero-items__qst">Наповнювач:</p>
@@ -87,20 +103,56 @@
               alt="Main blanket photo"
             />
           </picture>
-          <ul>
-            <li>
-              <img src="" alt="" />
-              <h3>Чохол з білої мікрофібри</h3>
-              <p>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <picture>
+                <source
+                  media="(min-width: 1536px)"
+                  srcset="./css/images/catalog/deck-photo1.png"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./css/images/catalog/tab-photo1.png"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="./css/images/catalog/mob-photo1.png"
+                />
+                <img
+                  class="catalog-img__item"
+                  src="./css/images/catalog/mob-photo1.png"
+                  alt="Чохол з білої мікрофібри"
+                />
+              </picture>
+              <h3 class="catalog-img__title">Чохол з білої мікрофібри</h3>
+              <p class="catalog-img__deckr">
                 Міцна тканина, яка не тільки приємна на дотик, але й має
                 терморегулюючі властивості, що допомагають уникнути статичної
                 напруги.
               </p>
             </li>
-            <li>
-              <img src="" alt="" />
-              <h3>Хлопкопон</h3>
-              <p>
+            <li class="catalog-item">
+              <picture>
+                <source
+                  media="(min-width: 1536px)"
+                  srcset="./css/images/catalog/deck-photo2.png"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./css/images/catalog/tab-photo2.png"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="./css/images/catalog/mob-photo2.png"
+                />
+                <img
+                  class="catalog-img__item"
+                  src="./css/images/catalog/mob-photo2.png"
+                  alt="Хлопкопон"
+                />
+              </picture>
+              <h3 class="catalog-img__title">Хлопкопон</h3>
+              <p class="catalog-img__deckr">
                 Силіконізоване волокно з щільністю 200 г/м2. Цей наповнювач
                 забезпечує м’якість і комфорт під час сну. Хлопкопон — це
                 сучасний матеріал зі штучних волокон, який має високу
@@ -109,19 +161,59 @@
                 що сприяє комфортній температурі під час сну.
               </p>
             </li>
-            <li>
-              <img src="" alt="" />
-              <h3>Ковдра стьобана</h3>
-              <p>
+            <li class="catalog-item">
+              <picture>
+                <source
+                  media="(min-width: 1536px)"
+                  srcset="./css/images/catalog/deck-photo3.png"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./css/images/catalog/tab-photo3.png"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="./css/images/catalog/mob-photo3.png"
+                />
+                <img
+                  class="catalog-img__item"
+                  src="./css/images/catalog/mob-photo3.png"
+                  alt="Ковдра стьобана"
+                />
+              </picture>
+              <h3 class="catalog-img__title">Ковдра стьобана</h3>
+              <p class="catalog-img__deckr">
                 Ковдра має стьобану лініями поверхню з малюнком тиснявою
                 “прямокутник”, що не лише зберігає форму виробу, але й надає
                 йому привабливий зовнішній вигляд.
               </p>
             </li>
-            <li>
-              <img src="" alt="" />
-              <h3>Оздоблена білим кантом Тік (коса бейка)</h3>
-              <p>Це надає ковдрі привабливий зовнішній вигляд.</p>
+            <li class="catalog-item">
+              <picture>
+                <source
+                  media="(min-width: 1536px)"
+                  srcset="./css/images/catalog/deck-photo4.png"
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./css/images/catalog/tab-photo4.png"
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="./css/images/catalog/mob-photo4.png"
+                />
+                <img
+                  class="catalog-img__item"
+                  src="./css/images/catalog/mob-photo4.png"
+                  alt="Оздоблена білим кантом Тік (коса бейка)"
+                />
+              </picture>
+              <h3 class="catalog-img__title">
+                Оздоблена білим кантом Тік (коса бейка)
+              </h3>
+              <p class="catalog-img__deckr">
+                Це надає ковдрі привабливий зовнішній вигляд.
+              </p>
             </li>
           </ul>
         </div>
