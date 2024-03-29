@@ -281,6 +281,14 @@ body {
   padding-bottom: 30px;
   background-color: var(--primary-title);
   color: var(--dark-text);
+  @media screen and (min-width: 1024px) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 1536px) {
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
 }
 
 .catalog-wrapper {
@@ -430,7 +438,16 @@ body {
   background-repeat: no-repeat;
 }
 
-.comparison-title {
+.comparison-content {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1536px) {
+  }
+}
+
+.comparison-sign {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--primary-title);
