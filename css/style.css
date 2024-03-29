@@ -5,15 +5,16 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --primary-font: "Russo One", sans-serif;
-  --primary-text: #434455;
-  --primary-title: #2e2f42;
-  --accent: #4d5ae5;
-  --pressed-state: #404bbf;
-  --white-hero-text: #ffffff;
-  --light-mode-backgrounds: #f4f4fd;
+  --light-text: #fffffc;
+  --dark-text: #000000;
+  --primary-title: #ffffff;
+  --accent: #e27601;
+  --mode-background: #333087;
 }
 h1,
 h2,
@@ -39,18 +40,20 @@ button {
   font-size: inherit;
   border: none;
 }
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.link {
+a {
   text-decoration: none;
 }
 body {
   font-family: var(--primary-font);
-  font-size: 16px;
-  color: var(--primary-text);
+  background-color: var(--mode-background);
+  color: var(--light-text);
+  font-weight: 400;
+  font-size: 25px;
 }
 .visually-hidden {
   position: absolute;
@@ -66,36 +69,105 @@ body {
 }
 .container {
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+
+@media screen and (min-width: 320px) {
   .container {
-    width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container {
-    width: 768px;
+    width: 1024px;
+    padding-left: 52px;
+    padding-right: 52px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1536px) {
   .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1536px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 }
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
+
 /* ========== Hero ========== */
+
+.hero-section {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-image: url(./images/hero-stars.png);
+  background-size: auto cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  margin-bottom: 30px;
+  width: 185px;
+  height: 184px;
+}
+
+.hero-title {
+  max-width: 218px;
+  font-size: 48px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--primary-title);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+
+  span {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+}
+
+.hero-img {
+  margin-bottom: 46px;
+  width: 283px;
+  height: 167px;
+}
+
+.hero-advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .hero-items__qst {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .hero-items__answ {
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: var(--light-text);
+    text-align: center;
+  }
+}
