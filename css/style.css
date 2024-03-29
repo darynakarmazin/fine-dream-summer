@@ -442,8 +442,22 @@ body {
   display: none;
   @media screen and (min-width: 1024px) {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   @media screen and (min-width: 1536px) {
+  }
+}
+
+.comparison-title {
+  @media screen and (min-width: 1024px) {
+    font-size: 48px;
+    line-height: 1.4;
+  }
+  @media screen and (min-width: 1536px) {
+    font-size: 62px;
+    letter-spacing: 2px;
   }
 }
 
@@ -456,10 +470,24 @@ body {
   h2 {
     font-size: 48px;
     line-height: 1.4;
+    @media screen and (min-width: 1024px) {
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 62px;
+      letter-spacing: 2px;
+    }
   }
 
   span {
     font-size: 25px;
     line-height: 0.7;
+    @media screen and (min-width: 1024px) {
+      font-size: 35px;
+      letter-spacing: 1px;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 48px;
+      line-height: 1.4;
+    }
   }
 }
