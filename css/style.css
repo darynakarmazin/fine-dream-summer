@@ -273,3 +273,30 @@ body {
     height: 501px;
   }
 }
+
+/* ========== Comparison ========== */
+.comparison-section {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-image: url(./images/mob-bg-star.png);
+  background-size: auto cover;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+}
+
+.comparison-title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-title);
+  text-align: center;
+
+  h2 {
+    font-size: 48px;
+    line-height: 1.4;
+  }
+
+  span {
+    font-size: 25px;
+    line-height: 0.7;
+  }
+}
