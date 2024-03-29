@@ -196,11 +196,15 @@ body {
   color: var(--dark-text);
 }
 
+.catalog-wrapper {
+  position: relative;
+}
+
 .catalog-img {
   padding-top: 45px;
   margin-bottom: 45px;
   width: 280px;
-  height: 226px;
+  height: 256px;
   @media screen and (min-width: 1024px) {
     width: 921px;
     height: 558px;
@@ -209,6 +213,22 @@ body {
     width: 1439px;
     height: 708px;
   }
+}
+
+.catalog-img__text1 {
+  position: absolute;
+  top: 0;
+  left: 140px;
+  font-size: 19px;
+  letter-spacing: 0px;
+}
+
+.catalog-img__text2 {
+  position: absolute;
+  bottom: 7px;
+  left: 140px;
+  font-size: 19px;
+  letter-spacing: 0px;
 }
 
 .catalog-list {
