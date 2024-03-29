@@ -100,10 +100,20 @@ body {
 .hero-section {
   padding-top: 30px;
   padding-bottom: 40px;
-  background-image: url(./images/hero-stars.png);
+  background-image: url(./images/mob-hero-stars.png);
   background-size: auto cover;
   background-position: center 0;
   background-repeat: no-repeat;
+  @media screen and (min-width: 1024px) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-image: url(./images/tab-hero-stars.png);
+  }
+  @media screen and (min-width: 1536px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: url(./images/deck-hero-stars.png);
+  }
 }
 
 .hero-content {
@@ -111,6 +121,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  @media screen and (min-width: 1536px) {
+    gap: 80px;
+  }
 }
 
 .hero-logo {
@@ -137,10 +164,26 @@ body {
   font-weight: 400;
   text-align: center;
   margin-bottom: 30px;
+  @media screen and (min-width: 1024px) {
+    max-width: 100%;
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1536px) {
+    font-size: 84px;
+  }
 
   span {
     font-size: 25px;
     line-height: 1.5;
+    @media screen and (min-width: 1024px) {
+      font-size: 36px;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 62px;
+    }
   }
 }
 
@@ -149,10 +192,12 @@ body {
   width: 283px;
   height: 167px;
   @media screen and (min-width: 1024px) {
-    width: 521px;
-    height: 292px;
+    width: 925px;
+    height: 432px;
+    margin-top: -75px;
   }
   @media screen and (min-width: 1536px) {
+    margin-bottom: 100px;
     width: 1439px;
     height: 708px;
   }
@@ -164,6 +209,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1536px) {
+  }
 }
 
 .hero-items {
@@ -171,6 +224,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 1024px) {
+    width: 387px;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1536px) {
+    width: 532px;
+  }
 
   .hero-items__qst {
     text-align: center;
@@ -178,6 +238,13 @@ body {
     line-height: 1.5;
     letter-spacing: 1px;
     text-transform: uppercase;
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+      font-size: 37px;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 52px;
+    }
   }
 
   .hero-items__answ {
@@ -185,6 +252,26 @@ body {
     letter-spacing: 1px;
     color: var(--light-text);
     text-align: center;
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+      font-size: 29px;
+    }
+    @media screen and (min-width: 1536px) {
+      font-size: 37px;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+.hero-items:nth-child(n + 3) {
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  @media screen and (min-width: 1536px) {
+    gap: 30px;
   }
 }
 
@@ -208,6 +295,7 @@ body {
   @media screen and (min-width: 1024px) {
     width: 921px;
     height: 558px;
+    margin-bottom: 100px;
   }
   @media screen and (min-width: 1536px) {
     width: 1439px;
@@ -221,6 +309,17 @@ body {
   left: 140px;
   font-size: 19px;
   letter-spacing: 0px;
+  @media screen and (min-width: 1024px) {
+    left: 400px;
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+  @media screen and (min-width: 1536px) {
+    top: 250px;
+    left: 1080px;
+    font-size: 37px;
+    letter-spacing: 2px;
+  }
 }
 
 .catalog-img__text2 {
@@ -229,6 +328,17 @@ body {
   left: 140px;
   font-size: 19px;
   letter-spacing: 0px;
+  @media screen and (min-width: 1024px) {
+    left: 680px;
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+  @media screen and (min-width: 1536px) {
+    bottom: 80px;
+    left: 1080px;
+    font-size: 37px;
+    letter-spacing: 2px;
+  }
 }
 
 .catalog-list {
