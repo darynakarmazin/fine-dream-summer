@@ -13,3 +13,6 @@ The layout is adaptive and cross-browser - mobile, tablet, desktop. Used the Mob
 
 Lighthouse report
 ![Lighthouse](https://github.com/darynakarmazin/fine-dream-summer/raw/main/css/images/og-image/lighthouse.png)
+
+Validation report
+![Lighthouse](https://github.com/darynakarmazin/fine-dream-summer/raw/main/css/images/og-image/validation.png)
