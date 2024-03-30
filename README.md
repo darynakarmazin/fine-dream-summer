@@ -10,3 +10,6 @@ The layout is adaptive and cross-browser - mobile, tablet, desktop. Used the Mob
 ![Tab](https://github.com/darynakarmazin/fine-dream-summer/raw/main/css/images/og-image/tab.png)
 
 ![Deck](https://github.com/darynakarmazin/fine-dream-summer/raw/main/css/images/og-image/deck.png)
+
+Lighthouse report
+![Lighthouse](https://github.com/darynakarmazin/fine-dream-summer/raw/main/css/images/og-image/lighthouse.png)
